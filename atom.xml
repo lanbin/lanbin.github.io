@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zeesuu.com/"/>
-  <updated>2016-03-01T03:23:18.000Z</updated>
+  <updated>2016-03-01T06:18:32.000Z</updated>
   <id>http://www.zeesuu.com/</id>
   
   <author>
@@ -16,29 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://www.zeesuu.com/2016/03/01/hello-world/"/>
-    <id>http://www.zeesuu.com/2016/03/01/hello-world/</id>
-    <published>2016-03-01T03:23:18.000Z</published>
-    <updated>2016-03-01T03:23:18.000Z</updated>
+    <title>关于面试</title>
+    <link href="http://www.zeesuu.com/2016/03/01/%E5%85%B3%E4%BA%8E%E9%9D%A2%E8%AF%95/"/>
+    <id>http://www.zeesuu.com/2016/03/01/关于面试/</id>
+    <published>2016-03-01T05:51:00.000Z</published>
+    <updated>2016-03-01T06:18:32.000Z</updated>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;hr&gt;
+&lt;p&gt;来到ENJOY之后,由于人员的问题开始大量接手面试的工作.&lt;br&gt;在互联网的”寒冬”中,一些公司撑不到下一轮融资,一些工程师开始寻求新的机会.&lt;br&gt;简历如大雪纷飞,虽然多,但是合格的却乏善可陈.  &lt;/p&gt;
+&lt;p&gt;对于职位要求不明确,是我遇到的最明显的一个问题.&lt;br&gt;求职意向都写的是前端工程师,但是简历里面有一半都是和前端工作经验没有关系.&lt;br&gt;令我惊讶的是, 几乎有一大半的工程师都是从java转过来的.&lt;br&gt;问其原因大多都是当时公司需要一个前端而已. &lt;/p&gt;
+&lt;p&gt;现在前端的轮子很多,新的概念工具层出不穷,大多数转行的工程师都是从直接使用轮子(Jquery,Bootstrap)开始.&lt;br&gt;这其实没有什么问题,但是在觉得深入这一行之后,还是要对于其基础的东西进行了解.&lt;/p&gt;
+&lt;p&gt;经常在和面试者交谈的时候,大概几句话就能知道对方的知识结构.&lt;br&gt;针对不同的层次,我会选择不同的问题.  &lt;/p&gt;
+&lt;p&gt;用原生Javascript来开发一款游戏是我最喜欢问的.&lt;br&gt;因为这个游戏涉及到了几乎涉及到了Javascript的交互/动画/DOM操作/数据处理,&lt;br&gt;在游戏布局和运行过程中也不可避免的涉及到了css/html.&lt;br&gt;几乎可以从全方位来考察面试者对于前端基础知识的掌握程度.&lt;br&gt;但是现在能够大概回答出来的人寥寥无几, 更多人的回答像是产品需求文档描述,而不是实现过程的描述.  &lt;/p&gt;
+&lt;p&gt;几个月下来,让我感觉到有些疲惫.&lt;br&gt;希望下次能遇到不错的工程师.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;http://enjoy.ricebook.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ENJOY&lt;/a&gt;北京需要前端工程师,简历可以发至lanbin1987#gmail.com&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;hr&gt;
+&lt;p&gt;来到ENJOY之后,由于人员的问题开始大量接手面试的工作.&lt;br&gt;在互联网的”寒冬”中,一些公司撑不到下一轮融资,一些工程师开始寻求新的机会.&lt;br&gt;简历如大雪纷飞,虽然多,但是合格的却乏善可陈.  &lt;/p&gt;
+&lt;p&gt;对于职位要求不明确,是我遇到的最明显的一个问题.
     
     </summary>
     
+      <category term="工作" scheme="http://www.zeesuu.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+      <category term="面试" scheme="http://www.zeesuu.com/tags/%E9%9D%A2%E8%AF%95/"/>
     
   </entry>
   
