@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="zh_cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Class in ES6(3) -- class的使用细节 · Ice Note</title><meta name="description" content="Class in ES6(3) -- class的使用细节 - 兰斌"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/lanbin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Class in ES6(3) -- class的使用细节</h1><div class="post-time">2016年3月6日</div><div class="post-content"><h3 id="使用细节"><a href="#使用细节" class="headerlink" title="使用细节"></a>使用细节</h3><p><em>extends后面接可以任何表达式</em></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//此方法可以用于多重继承</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> <span class="keyword">extends</span> <span class="title">combine</span>(<span class="title">MyMixin</span>, <span class="title">MySuperClass</span>) </span>&#123;&#125;</span><br></pre></td></tr></table></figure>
+<p><em>class中的方法后面可以接分号</em><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">    construct()&#123;&#125;;</span><br><span class="line">    method()&#123;&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><em>一些细节</em></p>
+<blockquote>
+<ol>
+<li>类名不能为val/arguments</li>
+<li>类的属性和方法名不能重复</li>
+<li>constructor方法只能是普通方法,不能设置成getter/setter或者是generator方法</li>
+<li>类名不能当做方法名使用</li>
+<li>类的prototype对象不能当做构造函数使用</li>
+<li>静态方法可以被写或者配置,但是不能被枚举</li>
+<li>类的prototype对象不能被写/枚举/配置</li>
+<li>类的prototype.construct方法也是一样</li>
+<li>类的prototype对象的方法可以被写/配置,但是不能被枚举</li>
+</ol>
+</blockquote>
+<p>参考:</p>
+<p><a href="http://exploringjs.com/es6/ch_classes.html" target="_blank" rel="external">exploringjs.com- Classes</a></p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/03/05/class-in-es6-2/" class="next">下一篇</a></div><div data-thread-key="2016/03/06/class-in-es6-3/" data-title="Class in ES6(3) -- class的使用细节" data-url="http://www.zeesuu.com/2016/03/06/class-in-es6-3/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"lanbin"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2016 <a href="http://www.zeesuu.com">兰斌</a>, Powered By github/pages Theme by pinggod.</p></div></footer><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?243a97b55416c8cc25101eb8bc99f4b0";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
