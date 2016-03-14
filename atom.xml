@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zeesuu.com/"/>
-  <updated>2016-03-06T05:37:23.000Z</updated>
+  <updated>2016-03-14T04:00:07.000Z</updated>
   <id>http://www.zeesuu.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Javascript数字与字符串运算</title>
+    <link href="http://www.zeesuu.com/2016/03/14/javascript%E6%95%B0%E5%AD%97%E4%B8%8E%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BF%90%E7%AE%97/"/>
+    <id>http://www.zeesuu.com/2016/03/14/javascript数字与字符串运算/</id>
+    <published>2016-03-14T03:28:00.000Z</published>
+    <updated>2016-03-14T04:00:07.000Z</updated>
+    
+    <content type="html">&lt;p&gt;javascript是弱类型的语音,所以在语法上允许数字和字符串做运算,在不同的运算上,就会出现类型转换的问题.&lt;/p&gt;
+&lt;h4 id=&quot;加&quot;&gt;&lt;a href=&quot;#加&quot; class=&quot;headerlink&quot; title=&quot;加(+)&quot;&gt;&lt;/a&gt;加(+)&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;01&lt;/span&gt; + &lt;span class=&quot;string&quot;&gt;&#39;01&#39;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// &#39;101&#39;  数字+字符串得到的结果为字符串&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&#39;01&#39;&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;01&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// &#39;011&#39;  反过来,则结果会不同&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;010&lt;/span&gt; + &lt;span class=&quot;string&quot;&gt;&#39;010&#39;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// &#39;8010&#39; 因为第一个数字有前置零,所以会被认为是八进制的数字,在运行的时候会先将010转化为十进制的8,然后在与后面的字符串进行运算&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;0x10&lt;/span&gt; + &lt;span class=&quot;string&quot;&gt;&#39;010&#39;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// &#39;16010&#39; 通上,先将0x10转化为十进制的16,再参与运算&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&#39;010&#39;&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;010&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// &#39;0108&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&#39;010&#39;&lt;/span&gt; + &lt;span class=&quot;number&quot;&gt;0x10&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// &#39;01016&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//当boolean参与运算时,true会转换为1,false会转化为0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// 2 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// 1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//当boolean与字符串运算时, true会转化为字符串,相当于使用了true.toString()方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&#39;1&#39;&lt;/span&gt; + &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// &#39;1true&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&#39;1&#39;&lt;/span&gt; + &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// &#39;1false&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//当数字和对象进行运算的时候,会把两者都转化为字符换来进行拼接运算&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//对于非十进制的数字,也是会先转化为十进制数字再来运算&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; + &amp;#123;&amp;#125; &lt;span class=&quot;comment&quot;&gt;// &#39;1[object Object]&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;010&lt;/span&gt; + &amp;#123;&amp;#125; &lt;span class=&quot;comment&quot;&gt;// &#39;8[object Object]&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;减&quot;&gt;&lt;a href=&quot;#减&quot; class=&quot;headerlink&quot; title=&quot;减(-)&quot;&gt;&lt;/a&gt;减(-)&lt;/h4&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;01&lt;/span&gt; - &lt;span class=&quot;string&quot;&gt;&#39;01&#39;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// 0  减法时,会都将算数变成数字&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;&#39;01&#39;&lt;/span&gt; - &lt;span class=&quot;number&quot;&gt;01&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// 0  反过来,结果也一样&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;010&lt;/span&gt; - &lt;span class=&quot;string&quot;&gt;&#39;010&#39;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// -2 非十进制的010依然会先变成十进制8减去后面&#39;010&#39;变成的数子10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;0x10&lt;/span&gt; - &lt;span class=&quot;string&quot;&gt;&#39;010&#39;&lt;/span&gt; &lt;span class=&quot;comment&quot;&gt;// 6 (16-10)原理同上&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//boolean运算原理一直,true/false分别转化为1/0参与运算&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt; - &amp;#123;&amp;#125; &lt;span class=&quot;comment&quot;&gt;// NaN 由于对象无法转化为数字,故有非数字类型的变量参与预算,得到的也是非数字类型的结果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&quot;乘-除&quot;&gt;&lt;a href=&quot;#乘-除&quot; class=&quot;headerlink&quot; title=&quot;乘(*)除(/)&quot;&gt;&lt;/a&gt;乘(*)除(/)&lt;/h4&gt;&lt;p&gt;主要的转化原理和减法一样,均会转化为数字进行运算,费是非十进制的数字转化为十进制.&lt;/p&gt;
+&lt;h3 id=&quot;结论&quot;&gt;&lt;a href=&quot;#结论&quot; class=&quot;headerlink&quot; title=&quot;结论&quot;&gt;&lt;/a&gt;结论&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;数字与字符串相加时,变成字符串&lt;/li&gt;
+&lt;li&gt;其他运算时,变成数字&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;原因应该是,+运算符也可以使用在字符串的拼接中,那么当其一边为字符串事,机会将当前的运算当做字符串拼接.所以在使用加号的时候一定要多注意两边参与运算变量的类型.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;javascript是弱类型的语音,所以在语法上允许数字和字符串做运算,在不同的运算上,就会出现类型转换的问题.&lt;/p&gt;
+&lt;h4 id=&quot;加&quot;&gt;&lt;a href=&quot;#加&quot; class=&quot;headerlink&quot; title=&quot;加(+)&quot;&gt;&lt;/a&gt;加(+)&lt;/h4&gt;&lt;figure
+    
+    </summary>
+    
+      <category term="javascript" scheme="http://www.zeesuu.com/categories/javascript/"/>
+    
+    
+      <category term="字符串" scheme="http://www.zeesuu.com/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+      <category term="数字" scheme="http://www.zeesuu.com/tags/%E6%95%B0%E5%AD%97/"/>
+    
+      <category term="运算" scheme="http://www.zeesuu.com/tags/%E8%BF%90%E7%AE%97/"/>
+    
+  </entry>
   
   <entry>
     <title>Class in ES6(3) -- class的使用细节</title>
