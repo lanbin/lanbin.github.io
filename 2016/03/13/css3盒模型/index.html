@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="zh_cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> css3盒模型 · Ice Note</title><meta name="description" content="css3盒模型 - 兰斌"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/lanbin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">css3盒模型</h1><div class="post-time">2016年3月13日</div><div class="post-content"><p>在css中,万物都是一个盒子,只是不同盒模型的计算方式,和增加了样式会让不同的元素看起来千差万别.</p>
+<p><img src="https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/assets/box-model.svg" alt=""></p>
+<p>盒模型的值</p>
+<ol>
+<li>content-box (默认)</li>
+<li>padding-box</li>
+<li>border-box</li>
+</ol>
+<p>其不同的点在于对一个盒子的宽高属性值的计算.</p>
+<h5 id="content-box"><a href="#content-box" class="headerlink" title="content-box"></a>content-box</h5><p>width/height即为content的宽高</p>
+<h5 id="padding-box"><a href="#padding-box" class="headerlink" title="padding-box"></a>padding-box</h5><p>width/height为content的宽高加上自己的padding值</p>
+<h5 id="border-box"><a href="#border-box" class="headerlink" title="border-box"></a>border-box</h5><p>width/height为在padding-box的基础上加上border的值</p>
+<h3 id="margin叠加"><a href="#margin叠加" class="headerlink" title="margin叠加"></a>margin叠加</h3><ol>
+<li>无padding&amp;border的空元素,其上下margin会产生叠加,添加内容或者padding/border时,叠加消失</li>
+<li>相邻的两个元素上下边相遇时,margin叠加(可以将相邻的两个元素用空元素隔开)</li>
+<li>父子元素若没有padding/border相隔,其margin产生叠加.</li>
+</ol>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/03/14/javascript数字与字符串运算/" class="prev">PRVE</a><a href="/2016/03/06/class-in-es6-3/" class="next">NEXT</a></div><div data-thread-key="2016/03/13/css3盒模型/" data-title="css3盒模型" data-url="http://www.zeesuu.com/2016/03/13/css3盒模型/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"lanbin"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2016 <a href="http://www.zeesuu.com">兰斌</a>, Powered By github/pages Theme by pinggod.</p></div></footer><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?243a97b55416c8cc25101eb8bc99f4b0";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>

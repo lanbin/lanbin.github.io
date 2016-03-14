@@ -52,6 +52,44 @@
   </entry>
   
   <entry>
+    <title>css3盒模型</title>
+    <link href="http://www.zeesuu.com/2016/03/13/css3%E7%9B%92%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://www.zeesuu.com/2016/03/13/css3盒模型/</id>
+    <published>2016-03-13T06:41:00.000Z</published>
+    <updated>2016-03-14T05:35:03.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在css中,万物都是一个盒子,只是不同盒模型的计算方式,和增加了样式会让不同的元素看起来千差万别.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://leohxj.gitbooks.io/front-end-database/content/html-and-css-basic/assets/box-model.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;盒模型的值&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;content-box (默认)&lt;/li&gt;
+&lt;li&gt;padding-box&lt;/li&gt;
+&lt;li&gt;border-box&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其不同的点在于对一个盒子的宽高属性值的计算.&lt;/p&gt;
+&lt;h5 id=&quot;content-box&quot;&gt;&lt;a href=&quot;#content-box&quot; class=&quot;headerlink&quot; title=&quot;content-box&quot;&gt;&lt;/a&gt;content-box&lt;/h5&gt;&lt;p&gt;width/height即为content的宽高&lt;/p&gt;
+&lt;h5 id=&quot;padding-box&quot;&gt;&lt;a href=&quot;#padding-box&quot; class=&quot;headerlink&quot; title=&quot;padding-box&quot;&gt;&lt;/a&gt;padding-box&lt;/h5&gt;&lt;p&gt;width/height为content的宽高加上自己的padding值&lt;/p&gt;
+&lt;h5 id=&quot;border-box&quot;&gt;&lt;a href=&quot;#border-box&quot; class=&quot;headerlink&quot; title=&quot;border-box&quot;&gt;&lt;/a&gt;border-box&lt;/h5&gt;&lt;p&gt;width/height为在padding-box的基础上加上border的值&lt;/p&gt;
+&lt;h3 id=&quot;margin叠加&quot;&gt;&lt;a href=&quot;#margin叠加&quot; class=&quot;headerlink&quot; title=&quot;margin叠加&quot;&gt;&lt;/a&gt;margin叠加&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;无padding&amp;amp;border的空元素,其上下margin会产生叠加,添加内容或者padding/border时,叠加消失&lt;/li&gt;
+&lt;li&gt;相邻的两个元素上下边相遇时,margin叠加(可以将相邻的两个元素用空元素隔开)&lt;/li&gt;
+&lt;li&gt;父子元素若没有padding/border相隔,其margin产生叠加.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在css中,万物都是一个盒子,只是不同盒模型的计算方式,和增加了样式会让不同的元素看起来千差万别.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://leohxj.gitbooks.io/front-end-database/content/html-and-css-bas
+    
+    </summary>
+    
+      <category term="css" scheme="http://www.zeesuu.com/categories/css/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Class in ES6(3) -- class的使用细节</title>
     <link href="http://www.zeesuu.com/2016/03/06/class-in-es6-3/"/>
     <id>http://www.zeesuu.com/2016/03/06/class-in-es6-3/</id>
