@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="zh_cn"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Redux · Ice Note</title><meta name="description" content="Redux - 兰斌"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/lanbin" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Redux</h1><div class="post-time">2016年4月6日</div><div class="post-content"><p>在Reactjs中,每一个component的数据来源分为两个部分<code>props</code>&amp;<code>state</code>  </p>
+<p><code>props</code>属于从外界传入的属性集,不能在组件周期中进行修改<br><code>state</code>是内部的属性集,可以在组件周期中随便修改</p>
+<p>由于Reactjs只是涉及到view层,view层的具体显示是根据各个数据的变化来进行渲染.那么Reactjs就需要一个来对数据进行统一处理的工具,类似提供 c &amp; m 层.</p>
+<h3 id="Redux"><a href="#Redux" class="headerlink" title="Redux"></a>Redux</h3><p>Facebook官方提出了Flux这种单向数据流的应用模式</p>
+<blockquote>
+<p>Action -&gt; Dispatcher -&gt; Store -&gt; View</p>
+</blockquote>
+<p>而Redux则是这种模式的一种实现,其为零依赖.</p>
+<p>在Flux中Action和Store对于dispatch有强耦合</p>
+<blockquote>
+<ol>
+<li>Action在Flux中就是对一个dispatch做了封装,但是在Redux中,Action只是单纯的返回一个对象</li>
+<li>Store在Flux中也需要封装一个dispatch,同时在修改完state之后还需要emmit一个change事件,而在Redux中Store只是接受一个oldValue,处理完之后返回一个newValue</li>
+</ol>
+</blockquote>
+<p>所以在Redux的整个流程中将会变成</p>
+<blockquote>
+<p>Dispatcher -&gt; Action -&gt; Reducer -&gt; View</p>
+</blockquote>
+<p>在任何的一个地方进行Dispatch的动作,其参数就是一个Action的对象.<br>此时所有的Reducer是会进行顺序响应来判断action.type是否为自己需要处理的事件.<br>传入新值返回旧值, 更改view</p>
+<p>这几乎就是Redux的全部</p>
+<p>参考:</p>
+<blockquote>
+<ol>
+<li><a href="https://hulufei.gitbooks.io/react-tutorial/" target="_blank" rel="external">React-Tutorial -  GitBook</a></li>
+</ol>
+</blockquote>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/03/14/javascript数字与字符串运算/" class="next">NEXT</a></div><div data-thread-key="2016/04/06/react-readux/" data-title="Redux" data-url="http://www.zeesuu.com/2016/04/06/react-readux/" data-author-key="1" class="ds-thread"></div><script>var duoshuoQuery = {short_name:"lanbin"};
+(function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+
+</script><div class="copyright"><p>© 2016 <a href="http://www.zeesuu.com">兰斌</a>, Powered By github/pages Theme by pinggod.</p></div></footer><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "//hm.baidu.com/hm.js?243a97b55416c8cc25101eb8bc99f4b0";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script><script src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.zeesuu.com/"/>
-  <updated>2016-03-14T05:54:56.000Z</updated>
+  <updated>2016-04-07T02:45:54.000Z</updated>
   <id>http://www.zeesuu.com/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Redux</title>
+    <link href="http://www.zeesuu.com/2016/04/06/react-readux/"/>
+    <id>http://www.zeesuu.com/2016/04/06/react-readux/</id>
+    <published>2016-04-06T03:56:00.000Z</published>
+    <updated>2016-04-07T02:45:54.000Z</updated>
+    
+    <content type="html">&lt;p&gt;在Reactjs中,每一个component的数据来源分为两个部分&lt;code&gt;props&lt;/code&gt;&amp;amp;&lt;code&gt;state&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;props&lt;/code&gt;属于从外界传入的属性集,不能在组件周期中进行修改&lt;br&gt;&lt;code&gt;state&lt;/code&gt;是内部的属性集,可以在组件周期中随便修改&lt;/p&gt;
+&lt;p&gt;由于Reactjs只是涉及到view层,view层的具体显示是根据各个数据的变化来进行渲染.那么Reactjs就需要一个来对数据进行统一处理的工具,类似提供 c &amp;amp; m 层.&lt;/p&gt;
+&lt;h3 id=&quot;Redux&quot;&gt;&lt;a href=&quot;#Redux&quot; class=&quot;headerlink&quot; title=&quot;Redux&quot;&gt;&lt;/a&gt;Redux&lt;/h3&gt;&lt;p&gt;Facebook官方提出了Flux这种单向数据流的应用模式&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Action -&amp;gt; Dispatcher -&amp;gt; Store -&amp;gt; View&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;而Redux则是这种模式的一种实现,其为零依赖.&lt;/p&gt;
+&lt;p&gt;在Flux中Action和Store对于dispatch有强耦合&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Action在Flux中就是对一个dispatch做了封装,但是在Redux中,Action只是单纯的返回一个对象&lt;/li&gt;
+&lt;li&gt;Store在Flux中也需要封装一个dispatch,同时在修改完state之后还需要emmit一个change事件,而在Redux中Store只是接受一个oldValue,处理完之后返回一个newValue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以在Redux的整个流程中将会变成&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Dispatcher -&amp;gt; Action -&amp;gt; Reducer -&amp;gt; View&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在任何的一个地方进行Dispatch的动作,其参数就是一个Action的对象.&lt;br&gt;此时所有的Reducer是会进行顺序响应来判断action.type是否为自己需要处理的事件.&lt;br&gt;传入新值返回旧值, 更改view&lt;/p&gt;
+&lt;p&gt;这几乎就是Redux的全部&lt;/p&gt;
+&lt;p&gt;参考:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://hulufei.gitbooks.io/react-tutorial/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;React-Tutorial -  GitBook&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在Reactjs中,每一个component的数据来源分为两个部分&lt;code&gt;props&lt;/code&gt;&amp;amp;&lt;code&gt;state&lt;/code&gt;  &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;props&lt;/code&gt;属于从外界传入的属性集,不能在组件周期中进行修改&lt;br&gt;&lt;code&gt;s
+    
+    </summary>
+    
+      <category term="Redux" scheme="http://www.zeesuu.com/categories/redux/"/>
+    
+    
+      <category term="redux" scheme="http://www.zeesuu.com/tags/redux/"/>
+    
+      <category term="action" scheme="http://www.zeesuu.com/tags/action/"/>
+    
+  </entry>
   
   <entry>
     <title>Javascript数字与字符串运算</title>
